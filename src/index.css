@@ -1,7 +1,12 @@
 @import "tailwindcss";
-
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 body{
     background: #344e41;
+    font-family: "Poppins", sans-serif;
     padding: 12px 25px;
 }
 
