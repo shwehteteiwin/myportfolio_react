@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body{
+    background: #344e41;
+    padding: 12px 25px;
+}
+
+li{
+    &:hover{
+        color: #000;
+    }
+}
+
+nav{
+    box-shadow: 0 6px 25px rgba(6, 1, 1, 0.09);
+}
+a{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
