@@ -1,29 +1,45 @@
-import { faBolt, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import QuickCard from "./QuickCard";
+import Card from "./Card";
+import Header_line from "./sections/Header_line";
 
-const AboutCard = () => {
+type AboutCardProps = {
+  education: string;
+  quickTitle: string;
+  career: string;
+  interest: string;
+};
+const AboutCard = ({
+  education,
+  career,
+  interest,
+  quickTitle,
+}: AboutCardProps) => {
   return (
-    <div className="w-[50%] mt-16 my-auto font-2xl text-zinc-100">
-      <h1 className=" text-2xl font-bold mb-5 text-[#a4c3b2]">
-        <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>
-        Eduction
-      </h1>
+    <div className=" mt-16 my-auto font-2xl text-zinc-100">
+      {/* <div className="flex w-full ">
+        <Header_line title={education}/>
+     <Header_line title={career}/>
+     </div> */}
 
-      <div className="rounded-t-2xl  p-6.25 border-2 border-solid border-[rgba(255,255,255,0.12)]">
-        <h4>University of Computer Studies (Mandalay)</h4>
-        <p>Bachelor of Computer Science (B.C.Sc)</p>
-        <span>Final Year • Expected Graduation 2026</span>
+      <div className="flex  gap-9">
+        <div className="w-[50%]">
+          <Header_line title={education} />
+          <Card education="Computer University " />
+        </div>
+
+        <div className="w-[50%]">
+          <Header_line title={career} />
+          <Card career="Seeking internship opportunities where I can apply my software development knowledge, strengthen my technical skills, gain industry experience, and contribute to real-world projects while continuing to learn and grow as a developer." />
+        </div>
       </div>
-      <div className="mt-10">
-            <h1 className=" text-2xl font-bold mb-5 text-[#a4c3b2]">
-            <FontAwesomeIcon icon={faBolt}></FontAwesomeIcon>
-            Quick Facts
-            </h1>
-            <div className="flex gap-5">
-                <QuickCard/>
-                <QuickCard/>
-            </div>
+
+      <div className="mt-10 ">
+        <Header_line title={quickTitle} />
+        <div className="flex gap-5 items-center justify-between">
+          <Card quickCard="Location" />
+          <Card quickCard="Location" />
+          <Card quickCard="Location" />
+          <Card quickCard="Location" />
+        </div>
       </div>
     </div>
   );

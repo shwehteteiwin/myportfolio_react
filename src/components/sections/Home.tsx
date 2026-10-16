@@ -1,7 +1,7 @@
-import shwePhoto from '../assets/shwe.png'
+import shwePhoto from '../../assets/shwe.png'
 import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import SocialIcon from './SocialIcon'
-import Button from './Button'
+import SocialIcon from '../SocialIcon'
+import Button from '../Button'
 import { faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
   return (
