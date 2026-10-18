@@ -257,6 +257,32 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
       </div>
 
       {selectedImage && (
+  <div
+    className="fixed inset-0 z-[100] flex h-screen w-screen items-center justify-center bg-black/80 p-3 sm:p-6"
+    onClick={() => setSelectedImage(null)}
+  >
+    <div
+      className="relative flex max-h-[90vh] max-w-[95vw] items-center justify-center sm:max-w-[90vw]"
+      onClick={(event) => event.stopPropagation()}
+    >
+      <img
+        src={selectedImage}
+        alt="Project preview"
+        className="block max-h-[85vh] max-w-[95vw] rounded-xl object-contain shadow-2xl sm:max-h-[88vh] sm:max-w-[90vw]"
+      />
+
+      <button
+        onClick={() => setSelectedImage(null)}
+        aria-label="Close image"
+        className="absolute right-2 top-2 flex h-9 w-9 items-center justify-center rounded-full bg-black/70 text-2xl leading-none text-white transition hover:bg-black/90 sm:right-3 sm:top-3 sm:h-10 sm:w-10"
+      >
+        ×
+      </button>
+    </div>
+  </div>
+)}
+
+      {/* {selectedImage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
           onClick={() => setSelectedImage(null)}
@@ -279,7 +305,7 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
@@ -294,6 +320,7 @@ const Projects = () => {
       id="projects"
       className="mt-28 w-full max-w-full overflow-hidden px-4 py-10 sm:px-6 lg:px-8 xl:px-12"
     >
+      
       <Header_line
         className="text-[#2F3E46]"
         bigTitle="Projects"
