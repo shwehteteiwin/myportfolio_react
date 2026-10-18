@@ -9,7 +9,7 @@ type ButtonProps = {
 const Button = ({iconName,link,buttonName,className=""}: ButtonProps) => {
     
   return (
-       <a className= {`items-center inline-flex text-center min-w-16 gap-2  ${className} rounded-4xl px-3 py-3 border-[2px_solid]`} href={link} target="_blank" >
+       <a className= {`items-center inline-flex text-center min-w-16 gap-2  ${className}  px-3 py-3`} href={link}  >
             {/* <i class="fa-solid fa-download"></i> */}
             <FontAwesomeIcon className="" icon={iconName}></FontAwesomeIcon>
             {buttonName}
