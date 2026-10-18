@@ -31,60 +31,31 @@ const Skill = () => {
           {
             title: "Programming",
             icon: faCode,
-            skills: [
-              "Java",
-              "JavaScript",
-              "TypeScript",
-              "C#",
-              "PHP",
-              "SQL",
-            ],
-          },
+            skills: [ "Java", "JavaScript",  "TypeScript",  "C#",   "PHP",   "SQL"  ], },
           {
-            title: "Frontend",
-            icon: faDesktop,
-            skills: [
-              "React",
-              "TypeScript",
-              "Tailwind CSS",
-            ],
+            title: "Frontend",  
+            icon: faDesktop, 
+            skills: [ "React", "TypeScript", "Tailwind CSS" ],
           },
           {
             title: "Backend",
             icon: faServer,
-            skills: [
-              "Spring Boot",
-              "Node.js",
-              "REST APIs",
-            ],
+            skills: [ "Spring Boot",  "Node.js", "REST APIs" ],
           },
           {
             title: "Database",
             icon: faDatabase,
-            skills: [
-              "MySQL",
-              "SQLite",
-              "Database Design",
-            ],
+            skills: [ "MySQL", "SQLite",  "Database Design"  ],
           },
           {
             title: "Tools",
             icon: faTools,
-            skills: [
-              "Git",
-              "GitHub",
-              "Docker",
-              "VS Code",
-            ],
+            skills: [ "Git",  "GitHub",  "Docker",  "VS Code", ],
           },
           {
             title: "Other",
             icon: faMicrochip,
-            skills: [
-              "Python",
-              "Pandas",
-              "IoT (ESP32, MQTT)",
-            ],
+            skills: [ "Python",  "Pandas", "IoT (ESP32, MQTT)", ],
           },
         ]}
       />
