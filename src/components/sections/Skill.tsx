@@ -1,3 +1,4 @@
+
 import {
   faCode,
   faDatabase,
@@ -5,23 +6,25 @@ import {
   faMicrochip,
   faServer,
   faTools,
-  
 } from "@fortawesome/free-solid-svg-icons";
+
 import Card from "../Card";
 import Header_line from "./Header_line";
 
-
 const Skill = () => {
   return (
-    <section id="skills" className="my-20 mx-6 rounded-3xl px-17.5 pb-10">
+    <section
+      id="skills"
+      className="my-16 sm:my-20 mx-3 sm:mx-6 rounded-3xl px-4 sm:px-8 md:px-12 lg:px-17.5 pb-8 sm:pb-10"
+    >
       <Header_line
         className="text-[#2f3e46]"
         bigTitle="Skills"
       />
 
-        <p className="max-w-175 my-5 text-center mx-auto text-[#2f3e46] opacity-.5">
-          Technologies, tools, and professional skills I have used.
-        </p>
+      <p className="max-w-175 my-4 sm:my-5 text-center mx-auto text-[#2f3e46] opacity-50 text-sm sm:text-base">
+        Technologies, tools, and professional skills I have used.
+      </p>
 
       <Card
         skills={[
@@ -90,59 +93,3 @@ const Skill = () => {
 };
 
 export default Skill;
-// const Skill = () => {
-//   return (
-//     <section className="mt-28 mx-6  rounded-3xl px-17.5 py-10]">
-//       <Header_line className="text-[#344e41]" bigTitle="Skills" />
-      
-//       <div className="grid grid-cols-2 gap-6.25">
-        
-//     <Card
-//   skills={[
-//     "HTML5",
-//     "CSS3",
-//     "JavaScript",
-//     "PHP",
-//     "Java",
-//     "C#",
-//     "Spring Boot",
-//     "React",
-//     "Node.js",
-//     "MySQL",
-//   ]}
-// />
-//         <Card
-//   skills={[
-//     "HTML5",
-//     "CSS3",
-//     "JavaScript",
-//     "PHP",
-//     "Java",
-//     "C#",
-//     "Spring Boot",
-//     "React",
-//     "Node.js",
-//     "MySQL",
-//   ]}
-// />
-//       </div>
-//       {/*<div className="flex">
-//          <div className="w-full mt-14 my-auto font-2xl text-zinc-100">
-//           <Header_line title="Programming" iconName={faCode}/>
-//          <Card/>
-//          <Header_line title="Technology & Tools" iconName={faTools}/>
-//         <Card/>
-//         </div>
-  
-//         <div className="w-full mt-14 my-auto font-2xl text-zinc-100">
-//           <Header_line title="Technology & Tools" iconName={faDatabase}/>
-//         <Card/>
-//          <Header_line title="Technology & Tools" iconName={faUsers}/>
-//         <Card/>
-//         </div>
-//       </div> */}
-//     </section>
-//   );
-// };
-
-// export default Skill;

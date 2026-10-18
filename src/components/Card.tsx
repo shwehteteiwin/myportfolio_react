@@ -74,22 +74,36 @@ const Card = ({
         </div>
       )}
 {skills && (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6 w-full">
     {skills.map((category) => (
       <div
         key={category.title}
-        className="bg-white rounded-2xl p-7.5 shadow-xl"
+        className="
+          bg-white
+          rounded-2xl
+          p-5 sm:p-6 md:p-7.5
+          shadow-xl
+          w-full
+        "
       >
         <Header_line
-          title={category.title} className="text-[#344e41]"
+          title={category.title}
+          className="text-[#344e41]"
           iconName={category.icon}
         />
 
-        <div className="flex flex-wrap gap-3 mt-5">
+        <div className="flex flex-wrap gap-2 sm:gap-3 mt-4 sm:mt-5">
           {category.skills.map((skill) => (
             <span
               key={skill}
-              className="px-3 py-2 rounded-lg text-[#344e41] bg-[#f6fff8]"
+              className="
+                px-2.5 py-1.5
+                sm:px-3 sm:py-2
+                rounded-lg
+                text-sm sm:text-base
+                text-[#344e41]
+                bg-[#f6fff8]
+              "
             >
               {skill}
             </span>
@@ -99,6 +113,7 @@ const Card = ({
     ))}
   </div>
 )}
+  
    
         
        
