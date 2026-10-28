@@ -25,7 +25,7 @@ const Nav = () => {
   return (
     <nav className="w-[calc(100%-2rem)] md:w-fit mx-auto bg-white rounded-4xl py-3.5 px-5 md:px-6 shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
       <div className="flex items-center justify-between gap-7.5">
-        <div className="font-bold text-zinc-800 text-lg">Portfolio.</div>
+        <div className="font-semibold text-zinc-600">Shwehtet</div>
 
         <ul className="hidden md:flex gap-7.5 text-zinc-500 font-semibold text-[15px] py-0.5">
           <li onClick={() => scrollToSection("home")} className="cursor-pointer">Home</li>
