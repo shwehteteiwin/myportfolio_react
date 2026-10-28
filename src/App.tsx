@@ -15,9 +15,6 @@ function App() {
       <div className="sticky top-4 z-50">
         <Nav />
       </div>
-
-  
-      
       <Home />
       <About />
       <Skill/>
